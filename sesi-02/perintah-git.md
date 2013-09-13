@@ -125,4 +125,48 @@
         To git@github.com:endymuhardin/pemrograman-1-2013.git
          * [new branch]      master -> master
 
+4. Mengambil repository yang sudah ada di remote repo
 
+    Command :
+
+        git clone <url>
+
+    Contoh :
+
+        git clone git@github.com:endymuhardin/materi-kuliah-java-fundamental-2011.git
+
+    Output :
+
+        Cloning into 'materi-kuliah-java-fundamental-2011'...
+        remote: Counting objects: 900, done.
+        remote: Compressing objects: 100% (409/409), done.
+        remote: Total 900 (delta 270), reused 900 (delta 270)
+        Receiving objects: 100% (900/900), 4.73 MiB | 92 KiB/s, done.
+        Resolving deltas: 100% (270/270), done.
+
+5. Mengambil update terbaru dari remote repo
+
+    Command :
+        
+        git pull
+
+    Output :
+
+        remote: Counting objects: 1380, done.
+        remote: Compressing objects: 100% (938/938), done.
+        remote: Total 1330 (delta 465), reused 117 (delta 44)
+        Receiving objects: 100% (1330/1330), 108.57 KiB | 3 KiB/s, done.
+        Resolving deltas: 100% (465/465), completed with 20 local objects.
+        From repo2.artivisi.com:project-akunting
+           6d98e0d..38dac2d  master     -> artivisi/master
+        Updating 6d98e0d..38dac2d
+        Fast-forward
+         accounting-domain/src/main/java/com/artivisi/accounting/domain/Account.java           |   5 +-
+         accounting-domain/src/main/java/com/artivisi/accounting/domain/Journal.java           |   3 +-
+         .../src/main/java/com/artivisi/accounting/service/BelajarRestfulService.java          |  33 +++--
+        
+        ...
+
+        27 files changed, 1130 insertions(+), 509 deletions(-)
+         create mode 100644 accounting-service/src/main/java/com/artivisi/accounting/dao/AccountSummaryDao.java
+         rename accounting-service/src/main/java/com/artivisi/accounting/dao/{EntriDao.java => EntryJournalDao.java} (64%)

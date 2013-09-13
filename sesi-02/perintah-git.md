@@ -47,6 +47,8 @@
         Author: Endy Muhardin <endy.muhardin@gmail.com>
         Date:   Fri Sep 13 10:04:06 2013 +0700
 
+## Operasi Remote ##
+
 4. Daftarkan Github sebagai remote repository
 
     Command : 
@@ -72,5 +74,24 @@
         github-endy	git@github.com:endymuhardin/pemrograman-1-2013.git (fetch)
         github-endy	git@github.com:endymuhardin/pemrograman-1-2013.git (push)
 
+6. Upload repo lokal ke remote
+
+    Command :
+
+        git push <nama-remote> <nama-branch-lokal>
+
+    Contoh : 
+
+        git push github-endy master
+
+    Output :
+
+        Counting objects: 8, done.
+        Delta compression using up to 4 threads.
+        Compressing objects: 100% (4/4), done.
+        Writing objects: 100% (8/8), 1.13 KiB, done.
+        Total 8 (delta 1), reused 0 (delta 0)
+        To git@github.com:endymuhardin/pemrograman-1-2013.git
+         * [new branch]      master -> master
 
 

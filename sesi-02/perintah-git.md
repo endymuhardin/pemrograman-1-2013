@@ -47,9 +47,40 @@
         Author: Endy Muhardin <endy.muhardin@gmail.com>
         Date:   Fri Sep 13 10:04:06 2013 +0700
 
+4. Kembali ke masa lalu
+
+    Command : 
+
+        git checkout <commit-id>
+
+    Keterangan : `commit-id` didapat dari perintah `git log`
+
+    Contoh : 
+
+        git checkout 11c67f0
+
+    Output : 
+
+        HEAD is now at 11c67f0... Commit pertama
+
+5. Kembali ke versi terbaru
+
+    Command : 
+
+        git checkout <nama-branch>
+
+    Contoh : 
+
+        git checkout master
+
+    Output :
+
+        Previous HEAD position was 11c67f0... perintah menambahkan remote repo
+        Switched to branch 'master'
+
 ## Operasi Remote ##
 
-4. Daftarkan Github sebagai remote repository
+1. Daftarkan Github sebagai remote repository
 
     Command : 
 
@@ -63,7 +94,7 @@
 
         tidak ada
 
-5. Melihat daftar remote repository
+2. Melihat daftar remote repository
 
     Command :
 
@@ -74,7 +105,7 @@
         github-endy	git@github.com:endymuhardin/pemrograman-1-2013.git (fetch)
         github-endy	git@github.com:endymuhardin/pemrograman-1-2013.git (push)
 
-6. Upload repo lokal ke remote
+3. Upload repo lokal ke remote
 
     Command :
 
